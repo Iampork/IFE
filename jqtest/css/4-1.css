@@ -1,0 +1,66 @@
+/*default*/
+body{
+	margin: 0;padding: 20px;font: 16px/20px simhei;background: #FFFFEE;
+}
+
+form,ul,li,p,h1,h2,h3,h4,h5,h6{
+	margin: 0;padding: 0;
+}
+
+img{
+	border: 0px;
+}
+
+ul,li{
+	list-style: none;
+}
+
+a{
+	color: #00007f;text-decoration: none;
+}
+a:hover{
+	color: #bd0a01;text-decoration:underline;
+}
+
+#box{
+	width: 200px;
+	margin: 0 auto;
+}
+
+.menu{
+	overflow: hidden;
+	border-color: #C4D5DF;
+	border-style: solid;
+	border-width:  1px 1px;
+}
+
+/*第一级*/
+.menu li.lv1 a{
+	display: block;
+	height: 28px;
+	line-height: 28px;
+	background: #EBF3F8;
+	font-weight: bold;
+	text-indent: 1cm;
+	border-top: 1px solid #C4D5DF;
+}
+
+.menu li.lv1 a:hover{background: #555;}
+.menu li.lv1 a.current{background: greenyellow;}
+
+/*第二级*/
+.menu li ul {overflow: hidden;}
+.menu li ul.lv2{display: none;}
+.menu li ul.lv2 li a{
+	display: block;
+	height: 26px;
+	line-height: 26px;
+	background: #2AEB4D;
+	font-weight: 400;
+	color: #42556B;
+	text-indent: 1cm;
+	border-top: 0px solid #FFFFFF;overflow: hidden;
+}
+.menu li ul.lv2 li a:hover{
+	color:#f60;
+}
